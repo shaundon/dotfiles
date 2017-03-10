@@ -26,3 +26,5 @@ If `~/.extra` exists, it will be sourced along with the other files. You can use
 * Sign into all your apps.
 * Sort out the dock.
 * Set up your screensaver.
+* Set the screen resolution.
+* Sort out your public key.
