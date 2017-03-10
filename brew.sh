@@ -15,7 +15,6 @@ brew upgrade
 formulae=(
   git
   bash-completion
-  nvm
   mas
 )
 
