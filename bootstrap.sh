@@ -10,10 +10,11 @@ function doIt() {
 		--exclude ".DS_Store" \
 		--exclude ".osx" \
 		--exclude "bootstrap.sh" \
-		--exclude "mas.sh" \
-		--exclude "other-installs.sh" \
-		--exclude "other-commands.sh" \
 		--exclude "brew.sh" \
+		--exclude "mas.sh" \
+		--exclude "new-mac.sh" \
+		--exclude "other-commands.sh" \
+		--exclude "other-installs.sh" \
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;

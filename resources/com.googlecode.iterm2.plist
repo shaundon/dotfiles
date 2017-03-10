@@ -234,7 +234,7 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Desktop</string>
+	<string>~/Dropbox/sync</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -274,7 +274,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>861 555 1016 502 0 0 1920 1177 </string>
+	<string>861 555 796 473 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>24 76 570 452 0 0 1920 1177 </string>
 	<key>New Bookmarks</key>
@@ -925,7 +925,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/shaun/Desktop</string>
+	<string>/Users/shaun/Dropbox/sync</string>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>

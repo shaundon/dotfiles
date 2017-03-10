@@ -2,8 +2,7 @@
 
 ## About
 
-The famous [dotfiles](https://github.com/mathiasbynens/dotfiles) with a load
-of stuff changed for my personal purposes.
+My personal 'new Mac setup script', originally based on the famous  [dotfiles](https://github.com/mathiasbynens/dotfiles).
 
 A non-exhaustive list of what this installs:
 * Homebrew plus a few packages.
@@ -15,7 +14,7 @@ A non-exhaustive list of what this installs:
 ## Installation
 
 ```bash
-git clone https://github.com/shaundon/dotfiles.git && cd dotfiles && source bootstrap.sh
+git clone https://github.com/shaundon/dotfiles.git && cd dotfiles && ./new-mac.sh
 ```
 
 ### Add custom commands without creating a new fork
