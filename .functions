@@ -39,12 +39,24 @@ function p {
 }
 
 function show-repo {
-    git remote -v | grep origin | awk ' { print $2 }' | uniq | tr ':' '/' | sed "s|git\@|https://|"
+    git remote -v | grep origin | awk ' { print $2 }' | uniq | tr ':' '/' | sed "s|git\@|http://|"
 }
 
 # Open a repo
 function repo {
     show-repo | xargs open
+}
+
+# cd to ~/projects, clone a repo and cd into it.
+function clone {
+	p;
+	git clone $1;
+
+	# basename just grabs the 'reponame.git' part.
+	reponame=$(basename $1);
+
+	# replace '.git' with an empty string.
+	cd ${reponame/.git/};
 }
 
 # Adds npm bin to your path, so you can run local npm deps
