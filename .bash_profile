@@ -34,6 +34,9 @@ fi;
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
+# pyenv
+eval "$(pyenv init -)"
+
 # Partial search with arrow up and down.
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'

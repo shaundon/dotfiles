@@ -16,6 +16,7 @@ formulae=(
   git
   bash-completion
   mas
+  pyenv
 )
 
 for formula in "${formulae[@]}"; do
