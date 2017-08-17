@@ -44,3 +44,6 @@ bind '"\e[B": history-search-forward'
 # Append to history immediately.
 shopt -s histappend
 PROMPT_COMMAND='history -a'
+
+# Used by React Native.
+REACT_EDITOR=atom
