@@ -46,21 +46,19 @@ function p {
   cd ~/projects/$1
 }
 
-# cd to ~/projects, clone a repo and cd into it.
-function clone {
-	p;
-	git clone $1;
-
-	# basename just grabs the "reponame.git" part.
-	reponame=$(basename $1);
-
-	# replace ".git" with an empty string.
-	cd ${reponame/.git/};
+# Clear Swift package stuff
+# https://forums.developer.apple.com/forums/thread/673976
+function xcodeclear {
+  swift package purge-clean
+	swift package reset
 }
 
-alias bcs="brew search --cask"
-alias bci="brew install --cask"
+alias bs="brew search"
+alias bi="brew install"
+alias bcu="brew uninstall"
 alias zedit="code ~/.zshrc"
+alias zload="source ~/.zshrc"
+alias yolo="git add -A && git commit --amend --no-edit && git push --force"
 
 ###
 ### END OF CUSTOM SCRIPTS
