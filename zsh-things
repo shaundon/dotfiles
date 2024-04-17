@@ -1,0 +1,56 @@
+###
+### START OF CUSTOM SCRIPTS
+###
+
+# Create a new directory and enter it
+function mkd() {
+	mkdir -p "$@" && cd "$_";
+}
+
+# Go to a project folder. If no args, goes to ~/projects
+# If an arg supplied, goes to ~/projects/<arg>
+function p {
+  cd ~/projects/$1
+}
+
+# cd to ~/projects, clone a repo and cd into it.
+function clone {
+	p;
+	git clone $1;
+
+	# basename just grabs the "reponame.git" part.
+	reponame=$(basename $1);
+
+	# replace ".git" with an empty string.
+	cd ${reponame/.git/};
+}
+
+# Clear Swift package stuff
+# https://forums.developer.apple.com/forums/thread/673976
+function xcodeclear {
+  swift package purge-clean
+	swift package reset
+}
+
+# oh-my-zsh plugins
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Allow arrow keys to navigate.
+bindkey "[D" backward-word
+bindkey "[C" forward-word
+
+# Git branch auto-completion.
+autoload -Uz compinit && compinit
+
+# Aliases
+alias bs="brew search"
+alias bi="brew install"
+alias bu="brew uninstall"
+alias zedit="code ~/.zshrc"
+alias zload="source ~/.zshrc"
+alias yolo="git add -A && git commit --amend --no-edit && git push --force"
+
+###
+### END OF CUSTOM SCRIPTS
+###
