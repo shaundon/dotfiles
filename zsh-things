@@ -43,6 +43,15 @@ bindkey "[C" forward-word
 # Git branch auto-completion.
 autoload -Uz compinit && compinit
 
+function show-repo {
+    git remote -v | grep origin | awk ' { print $2 }' | uniq | tr ':' '/' | sed "s|git\@|http://|"
+}
+
+# Open a repo
+function repo {
+    show-repo | xargs open
+}
+
 # Aliases
 alias bs="brew search"
 alias bi="brew install"
